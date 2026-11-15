@@ -14,10 +14,10 @@ CNAME                 custom domain for GitHub Pages
 
 ## Run locally
 
-Open `index.html` in a browser, or serve the folder:
+Links use clean, root-relative URLs (`/ar/`, `/ar/products`), which GitHub Pages resolves to the `.html` files. Opening the files straight from disk will not follow them; serve the folder with a server that maps extensionless paths to `.html`, for example:
 
 ```
-python3 -m http.server 5310 --directory .
+npx serve .
 ```
 
 ## Hosting
