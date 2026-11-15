@@ -1116,26 +1116,50 @@ h3 {
 
 .site-footer {
   background: var(--ink);
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
   color: var(--on-dark-muted);
-  padding-block: 28px;
+  padding-block: 40px 28px;
   font-size: 0.9rem;
 }
 
-.site-footer .wrap {
+.footer-main {
   display: grid;
-  gap: 14px;
+  gap: 20px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 @media (min-width: 760px) {
-  .site-footer .wrap {
+  .footer-main {
     grid-template-columns: 1fr auto;
-    align-items: center;
+    align-items: end;
   }
 }
 
 .site-footer p {
   margin: 0;
+}
+
+.footer-name {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.footer-name span {
+  margin-inline-start: 8px;
+  color: var(--on-dark-muted);
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.footer-legal address {
+  margin-top: 4px;
+  font-style: normal;
+}
+
+.footer-copy {
+  padding-top: 18px;
+  font-size: 0.82rem;
 }
 
 .site-footer ul {
